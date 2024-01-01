@@ -33,7 +33,7 @@
             <button
               class="menu-btn"
               type="button"
-              aria-label="Open menu button"
+              aria-label="Open menu button" data-menu-open
             >
               <svg class="menu-btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-hamburger"></use>
@@ -77,7 +77,7 @@
             Effective Solutions <br />
             for Your Business
           </h1>
-          <button type="button" class="btn" aria-label="Open modal button">
+          <button class="btn" type="button" class="btn" aria-label="Open modal button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -755,9 +755,9 @@
     </footer>
 
     <!-- modal -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn" aria-label="Close modal button">
+        <button type="button" class="modal-btn" aria-label="Close modal button" data-modal-close>
           <svg class="icon-modal-btn" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -850,8 +850,8 @@
 
     <!-- mobile menu   -->
 
-    <div class="mobile-menu is-">
-      <button type="button" class="mobile-btn" aria-label="Close menu button">
+    <div class="menu is-hidden" data-menu>
+      <button type="button" class="mobile-btn" aria-label="Close menu button" data-menu-close>
         <svg class="icon-modal-btn" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -937,5 +937,7 @@
         </li>
       </ul>
     </div>
+   <script src="./js/modal.js"></script>
+   <script src="./js/menu.js"></script>
   </body>
 </html>
